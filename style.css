@@ -50,6 +50,15 @@ body {
     font-size: 1.1em;
 }
 
+.contato p {
+    margin: 10px 0;
+}
+
+.contato i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
 /* Links Úteis */
 .links-uteis h3 {
     margin-top: 20px;
@@ -72,6 +81,10 @@ body {
 
 .links-uteis ul li a:hover {
     text-decoration: underline;
+}
+
+.links-uteis ul li i {
+    margin-right: 10px;
 }
 
 /* Coluna Direita - Rolável */
@@ -145,8 +158,13 @@ body {
 
 .projeto img {
     width: 100%;
-    height: auto;
+    height: 150px; /* Altura fixa para formar retângulo */
+    object-fit: cover;
     border-radius: 5px;
+}
+
+.descricao {
+    padding: 10px 0;
 }
 
 /* Estilo para botões colapsáveis e conteúdo */
