@@ -85,73 +85,10 @@ body {
     box-sizing: border-box;
 }
 
-/* Seções da Coluna Direita */
-.coluna-direita section {
+/* Seção Habilidades */
+.habilidades {
     margin-bottom: 40px;
 }
 
-.coluna-direita h2 {
-    color: #4CAF50;
-    margin-bottom: 20px;
-}
-
-/* Grid para Projetos - 2 por Linha, com Descrição Abaixo da Imagem */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de igual largura */
-    gap: 20px; /* Espaçamento entre projetos */
-}
-
-.projeto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.projeto a {
-    display: block;
-}
-
-.projeto img {
-    width: 300px; /* Tamanho maior para as imagens */
-    height: 200px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.projeto img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
-.projeto p {
-    font-size: 1.1em;
-    margin: 0;
-    margin-top: 10px; /* Espaço entre imagem e descrição */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .coluna-esquerda {
-        position: static;
-        width: 100%;
-        height: auto;
-    }
-
-    .coluna-direita {
-        margin-left: 0;
-        height: auto;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr; /* Projetos em uma coluna no celular */
-    }
-
-    .projeto img {
-        width: 100%; /* Imagens ocupam 100% da largura da coluna no mobile */
-        height: auto;
-    }
-}
+.habilidades h2 {
+    color: #
