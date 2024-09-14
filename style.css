@@ -42,4 +42,105 @@ body {
 }
 
 .informacoes-pessoais h2 {
-    font-size
+    font-size: 1.8em;
+}
+
+.informacoes-pessoais p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Links Úteis */
+.links-uteis h3 {
+    margin-top: 20px;
+}
+
+.links-uteis ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-uteis ul li {
+    margin: 10px 0;
+}
+
+.links-uteis ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.links-uteis ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Coluna Direita - Rolável */
+.coluna-direita {
+    margin-left: 30%; /* Deixa espaço para a coluna fixa */
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    height: 100vh; /* Para garantir que tenha o scroll vertical */
+    box-sizing: border-box;
+}
+
+/* Seções da Coluna Direita */
+.coluna-direita section {
+    margin-bottom: 40px;
+}
+
+.coluna-direita h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Projetos */
+.projeto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projeto img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.projeto p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.projeto a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .coluna-esquerda {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .coluna-direita {
+        margin-left: 0;
+        height: auto;
+    }
+
+    .projeto img {
+        width: 80px;
+        height: 80px;
+    }
+}
