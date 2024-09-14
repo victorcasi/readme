@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Victor Carvalho Silva</title>
-    <link rel="stylesheet" href="style.css"> <!-- Se usar um arquivo CSS -->
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ligação com o arquivo CSS -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to my Portfolio :) </h1>
-        <p>Under construction | Data Science</p>
-    </header>
+    <div class="container">
+        <!-- Coluna da Esquerda -->
+        <div class="coluna-esquerda">
+            <div class="foto-perfil">
+                <img src="sua-foto.jpg" alt="Minha Foto">
+            </div>
+            <div class="informacoes-pessoais">
+                <h2>Seu Nome</h2>
+                <p>Desenvolvedor Web apaixonado por tecnologia e inovação. Sempre aprendendo algo novo!</p>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
+                <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+                <p><strong>Email:</strong> seuemail@exemplo.com</p>
+                <div class="links-uteis">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/seuperfil" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/seuusuario" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/seuusuario" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <section id="sobre-mim">
-        <h2>Sobre Mim</h2>
-        <p>Sou desenvolvedor com experiência em...</p>
-    </section>
+        <!-- Coluna da Direita -->
+        <div class="coluna-direita">
+            <section id="sobre-mim">
+                <h2>Sobre Mim</h2>
+                <p>Sou um desenvolvedor com experiência em front-end e back-end, focado em criar soluções eficazes e elegantes...</p>
+            </section>
 
-    <section id="projetos">
-        <h2>Projetos</h
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <div class="projeto">
+                    <h3>Nome do Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="https://github.com/seuprojeto">Ver no GitHub</a>
+                </div>
+                <div class="projeto">
+                    <h3>Nome do Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="https://github.com/seuprojeto">Ver no GitHub</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
