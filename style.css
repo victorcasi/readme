@@ -1,92 +1,3 @@
-/* Estilo Global */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    display: flex;
-    flex-wrap: nowrap;
-    min-height: 100vh;
-}
-
-/* Coluna Esquerda - Fixa */
-.coluna-esquerda {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25%; /* Largura da coluna esquerda */
-    height: 100vh;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-/* Foto de Perfil em Forma de Círculo */
-.foto-perfil img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-}
-
-/* Informações Pessoais */
-.informacoes-pessoais {
-    margin-top: 20px;
-}
-
-.informacoes-pessoais h2 {
-    font-size: 1.8em;
-}
-
-.informacoes-pessoais p {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
-
-.contato p {
-    margin: 10px 0;
-}
-
-.contato i {
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-
-/* Links Úteis */
-.links-uteis h3 {
-    margin-top: 20px;
-}
-
-.links-uteis ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.links-uteis ul li {
-    margin: 10px 0;
-}
-
-.links-uteis ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-.links-uteis ul li a:hover {
-    text-decoration: underline;
-}
-
-.links-uteis ul li i {
-    margin-right: 10px;
-}
-
 /* Coluna Direita - Rolável */
 .coluna-direita {
     margin-left: 25%; /* Margem para deixar espaço para a coluna esquerda */
@@ -98,108 +9,41 @@ body {
     box-sizing: border-box;
 }
 
-/* Seção Habilidades */
-.habilidades {
-    margin-bottom: 40px;
+/* Seção Empresas onde Trabalhei */
+#empresas {
+    margin-top: 40px;
 }
 
-.habilidades h2 {
+#empresas h2 {
     font-size: 1.6em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.collapsible {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.collapsible:hover {
-    background-color: #45a049;
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.content ul li {
-    margin: 5px 0;
-    font-size: 1em;
-}
-
-/* Grid Container */
-.grid-container {
+.logos {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.projeto {
-    flex: 1 1 calc(50% - 20px); /* Dois projetos por linha com margem */
-    box-sizing: border-box;
-}
-
-.projeto img {
-    width: 100%;
-    height: 150px; /* Altura fixa para formar retângulo */
-    object-fit: cover;
+.logos img {
+    height: 60px; /* Altura fixa para os logos */
+    width: auto;
     border-radius: 5px;
 }
 
-.descricao {
-    padding: 10px 0;
+/* Seção Estudo */
+#estudo {
+    margin-top: 40px;
 }
 
-/* Estilo para botões colapsáveis e conteúdo */
-button.collapsible {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.2em;
+#estudo h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.logos img {
+    height: 60px; /* Altura fixa para os logos */
+    width: auto;
     border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-button.collapsible:hover {
-    background-color: #45a049;
-}
-
-div.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-div.content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-div.content ul li {
-    margin: 5px 0;
-    font-size: 1em;
 }
