@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css"> <!-- Ligação com o arquivo CSS -->
+    <script src="script.js" defer></script> <!-- Ligação com o arquivo JS -->
 </head>
 <body>
     <div class="container">
@@ -36,8 +37,8 @@
             <section id="habilidades">
                 <h2>Habilidades</h2>
                 <div class="habilidades">
-                    <div class="categoria">
-                        <h3>Habilidades de Programação</h3>
+                    <button class="collapsible">Habilidades de Programação</button>
+                    <div class="content">
                         <ul>
                             <li>Python com foco em análise de dados</li>
                             <li>Pensamento Estratégico</li>
@@ -48,16 +49,18 @@
                             <li>Estatística e Machine Learning</li>
                         </ul>
                     </div>
-                    <div class="categoria">
-                        <h3>Algoritmos de Machine Learning</h3>
+                    
+                    <button class="collapsible">Algoritmos de Machine Learning</button>
+                    <div class="content">
                         <ul>
-                            <li>Algoritmos de regressão, classificação e clusterização.</li>
+                            <li>Algoritmos de regressão, classificação e clusterização</li>
                             <li>Métricas de Performance (RMSE, MSE, MAE, MAPE, Confusion Matrix, Precision, Recall, ROC Curve, Silhouette Score e R2)</li>
-                            <li>Pacotes de Machine Learning: Sklearn e XGboost.</li>
+                            <li>Pacotes de Machine Learning: Sklearn e XGboost</li>
                         </ul>
                     </div>
-                    <div class="categoria">
-                        <h3>Redes Neurais e Deep Learning</h3>
+                    
+                    <button class="collapsible">Redes Neurais e Deep Learning</button>
+                    <div class="content">
                         <ul>
                             <li>LlamaIndex</li>
                             <li>LLM</li>
@@ -65,16 +68,18 @@
                             <li>RAG</li>
                         </ul>
                     </div>
-                    <div class="categoria">
-                        <h3>Visualização de Dados</h3>
+                    
+                    <button class="collapsible">Visualização de Dados</button>
+                    <div class="content">
                         <ul>
                             <li>Plotly</li>
                             <li>Seaborn</li>
                             <li>Streamlit</li>
                         </ul>
                     </div>
-                    <div class="categoria">
-                        <h3>Engenharia de Software</h3>
+                    
+                    <button class="collapsible">Engenharia de Software</button>
+                    <div class="content">
                         <ul>
                             <li>Github</li>
                             <li>Streamlit Cloud</li>
