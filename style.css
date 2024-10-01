@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-/* Fixed left column styles */
+/* Fixed Left Column Styles */
 .left-column {
     width: 250px; /* Fixed width for the left column */
     background-color: #f4f4f4; /* Light background color */
@@ -23,7 +23,7 @@ body {
     border-right: 1px solid #ccc; /* Optional border for separation */
 }
 
-/* Styles for the profile photo */
+/* Styles for Profile Photo */
 .profile-photo {
     text-align: center; /* Center the photo */
 }
@@ -33,7 +33,7 @@ body {
     border-radius: 50%; /* Circular image */
 }
 
-/* Styles for personal information */
+/* Styles for Personal Information */
 .personal-information {
     margin-top: 20px;
 }
@@ -43,103 +43,6 @@ body {
     margin: 5px 0; /* Space between contact info items */
 }
 
-/* Useful links styles */
+/* Useful Links Styles */
 .useful-links {
-    margin-top: 20px;
-}
-
-.useful-links h3 {
-    margin-bottom: 10px; /* Space below heading */
-}
-
-/* Link styles */
-.useful-links ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-}
-
-.useful-links li {
-    margin-bottom: 10px; /* Space between list items */
-}
-
-.useful-links a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Text color */
-}
-
-.useful-links a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Styles for the right column */
-.right-column {
-    margin-left: 270px; /* Offset to avoid the left column */
-    padding: 20px;
-    flex-grow: 1; /* Allow the right column to take up remaining space */
-}
-
-/* Section headers */
-h2 {
-    margin-top: 20px; /* Space above section headers */
-}
-
-/* Skills section */
-.skills {
-    margin-top: 20px;
-}
-
-/* Collapsible button styles */
-.collapsible {
-    background-color: #e7e7e7; /* Background color for collapsible buttons */
-    color: #333;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.collapsible:hover {
-    background-color: #dcdcdc; /* Darken on hover */
-}
-
-/* Content styles for collapsible sections */
-.content {
-    padding: 0 18px;
-    display: none; /* Hidden by default */
-    overflow: hidden;
-}
-
-/* Project grid styles */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px; /* Space between grid items */
-}
-
-/* Project styles */
-.project img {
-    width: 100%; /* Make images responsive */
-    border-radius: 8px; /* Slightly rounded corners */
-}
-
-.description {
-    padding: 10px;
-    background-color: #f9f9f9; /* Light background for description */
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 10px; /* Space above description */
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .left-column {
-        width: 200px; /* Smaller width for mobile */
-    }
-
-    .right-column {
-        margin-left: 220px; /* Adjust right column margin */
-    }
-}
+    margin-top: 20px
