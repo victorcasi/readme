@@ -37,21 +37,13 @@ body {
 }
 
 .contact,
-.useful-links .icons {
-    display: flex; /* Utiliza flexbox para alinhar os ícones */
-    justify-content: center; /* Centraliza os ícones */
-    margin-top: 15px; /* Margem superior para espaçamento */
+.useful-links {
+    margin-top: 15px;
+    text-align: center; /* Centraliza o conteúdo */
 }
 
-.useful-links .icons a {
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    font-size: 24px; /* Tamanho do ícone */
-    color: #000000 !important; /* Cor do ícone, ajuste conforme necessário */
-    text-decoration: none; /* Remove o sublinhado */
-}
-
-.useful-links .icons a:hover {
-    color: #FFFFFF !important; /* Cor ao passar o mouse, ajuste conforme necessário */
+.useful-links h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
 .icons {
