@@ -1,121 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Vincular ao arquivo CSS -->
-    <script src="script.js" defer></script> <!-- Vincular ao arquivo JS -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #40E0D0;
-        }
-
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-
-        .left-column {
-            background-color: #fff;
-            width: 30%;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .left-column h2,
-        .left-column p {
-            text-align: center;
-        }
-
-        .profile-photo img {
-            width: 100px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .personal-information {
-            margin-top: 20px;
-        }
-
-        .contact,
-        .useful-links {
-            margin-top: 15px;
-        }
-
-        .useful-links ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .useful-links li {
-            margin: 10px 0;
-        }
-
-        .right-column {
-            width: 70%;
-            overflow-y: auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        button.collapsible {
-            background-color: #40E0D0;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 16px;
-            transition: background-color 0.3s;
-            width: 100%;
-        }
-
-        button.collapsible:hover {
-            background-color: #36b1a0;
-        }
-
-        .content {
-            padding: 0 15px;
-            display: none;
-            overflow: hidden;
-        }
-
-        .project {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .grid-container img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <script src="script.js" defer></script> <!-- Link to the JS file -->
 </head>
-
 <body>
     <div class="container">
-        <!-- Coluna fixa à esquerda -->
+        <!-- Fixed Left Column -->
         <div class="left-column">
             <div class="profile-photo">
                 <img src="your-photo.jpg" alt="My Photo">
@@ -131,24 +26,21 @@
                 <div class="useful-links">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/yourusername" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i> GitHub</a></li>
-                        <li><a href="https://twitter.com/yourusername" target="_blank"><i class="fa fa-twitter"
-                                    aria-hidden="true"></i> Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/yourusername" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="https://twitter.com/yourusername" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Coluna rolável à direita -->
+        <!-- Scrollable Right Column -->
         <div class="right-column">
-            <!-- Seção de Skills -->
+            <!-- Skills Section -->
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skills">
-                    <button class="collapsible">Programming and Data Skills</button>
+                    <button class="collapsible">Programming Skills</button>
                     <div class="content">
                         <ul>
                             <li>Python (Numpy, Pandas, Scikit-learn, Matplotlib)</li>
@@ -158,87 +50,72 @@
                             <li>Data Analysis</li>
                         </ul>
                     </div>
-
-                    <button class="collapsible">Cloud and CRM</button>
+                    
+                    <button class="collapsible">Cloud and Analytics</button>
                     <div class="content">
                         <ul>
-                            <li>Google Cloud Platform (BigQuery, Vertex AI)</li>
-                            <li>Salesforce (Marketing Cloud, CDP, Einstein)</li>
+                            <li>Google Cloud Platform/GCP (BigQuery, Vertex AI)</li>
+                            <li>Salesforce (Marketing Cloud, CDP, and Einstein)</li>
+                            <li>SAS (CI, Guide, and Viya)</li>
+                            <li>Google Ad Manager and Analytics</li>
                         </ul>
                     </div>
 
-                    <button class="collapsible">Business and Visualization Tools</button>
+                    <button class="collapsible">Data Visualization and Tools</button>
                     <div class="content">
                         <ul>
-                            <li>PowerBI</li>
+                            <li>Power BI</li>
                             <li>Tableau</li>
-                            <li>Google Analytics</li>
-                            <li>Excel & PowerPoint</li>
+                            <li>Excel</li>
+                            <li>PowerPoint</li>
                         </ul>
                     </div>
 
-                    <button class="collapsible">Collaboration and Agile</button>
+                    <button class="collapsible">Project Management and Collaboration</button>
                     <div class="content">
                         <ul>
                             <li>Jira</li>
                             <li>Confluence</li>
-                            <li>Agile Methodology</li>
+                            <li>Agile</li>
                         </ul>
                     </div>
 
-                    <button class="collapsible">Data Engineering and DevOps</button>
+                    <button class="collapsible">Big Data Technologies</button>
                     <div class="content">
                         <ul>
                             <li>Hadoop</li>
-                            <li>GitHub & GitLab</li>
-                            <li>SAS (CI, Guide, Viya)</li>
+                            <li>GitHub</li>
+                            <li>GitLab</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Seção de Data Science -->
-            <section id="data-science">
-                <h2>Data Science</h2>
-                <div class="grid-container">
-                    <div class="project">
-                        <a href="https://github.com/yourproject3" target="_blank">
-                            <img src="data-science-project1.jpg" alt="Data Science Project 1">
-                        </a>
-                        <div class="description">
-                            <p>Description of the problem and tools used.</p>
-                            <p>Tools: Python, Scikit-Learn, Jupyter Notebook</p>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/yourproject4" target="_blank">
-                            <img src="data-science-project2.jpg" alt="Data Science Project 2">
-                        </a>
-                        <div class="description">
-                            <p>Description of the problem and tools used.</p>
-                            <p>Tools: R, ggplot2, caret</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<!-- Data Science Section -->
+<section id="data-science">
+    <h2>Data Science</h2>
+    <div class="grid-container">
+        <div class="project">
+            <a href="https://github.com/yourproject3" target="_blank">
+                <img src="data-science-project1.jpg" alt="Data Science Project 1">
+            </a>
+            <div class="description">
+                <p>Description of the problem and tools used.</p>
+                <p>Tools: Python, Scikit-Learn, Jupyter Notebook</p>
+            </div>
+        </div>
+        <div class="project">
+            <a href="https://github.com/yourproject4" target="_blank">
+                <img src="data-science-project2.jpg" alt="Data Science Project 2">
+            </a>
+            <div class="description">
+                <p>Description of the problem and tools used.</p>
+                <p>Tools: R, ggplot2, caret</p>
+            </div>
         </div>
     </div>
-
-    <script>
-        // Função para colapsar seções
-        var coll = document.getElementsByClassName("collapsible");
-        for (var i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
+</section>
+        </div>
+    </div>
 </body>
-
 </html>
