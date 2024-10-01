@@ -98,7 +98,7 @@ button.collapsible:hover {
 
 .project {
     margin: 20px 0;
-    text-align: center; /* Centraliza o texto das descrições de projetos */
+    text-align: left !important;  /* Centraliza o texto das descrições de projetos */
 }
 
 .grid-container {
