@@ -54,12 +54,12 @@ body {
 
 .icons a {
     font-size: 24px; /* Ajusta o tamanho dos ícones */
-    color: #000; /* Cor dos ícones */
+    color: #000 !important; /* Cor dos ícones */
     text-decoration: none; /* Remove sublinhado dos links */
 }
 
 .icons a:hover {
-    color: #fff; /* Muda a cor dos ícones ao passar o mouse */
+    color: #fff !important; /* Muda a cor dos ícones ao passar o mouse */
 }
 
 .right-column {
