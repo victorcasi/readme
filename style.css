@@ -1,205 +1,87 @@
-/* Estilo Global */
+/* General styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    display: flex;
 }
 
+/* Container to hold both columns */
 .container {
     display: flex;
-    flex-wrap: nowrap;
-    min-height: 100vh;
+    width: 100%;
 }
 
-/* Coluna Esquerda - Fixa */
-.coluna-esquerda {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25%; /* Largura da coluna esquerda */
-    height: 100vh;
-    background-color: #4CAF50;
-    color: white;
+/* Fixed left column styles */
+.left-column {
+    width: 250px; /* Fixed width for the left column */
+    background-color: #f4f4f4; /* Light background color */
     padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+    position: fixed; /* Fixes the left column */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Allows scrolling if content is too long */
 }
 
-/* Foto de Perfil em Forma de Círculo */
-.foto-perfil img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
+/* Styles for the profile photo */
+.profile-photo {
+    text-align: center; /* Center the photo */
 }
 
-/* Informações Pessoais */
-.informacoes-pessoais {
+.profile-photo img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 50%; /* Circular image */
+}
+
+/* Styles for personal information */
+.personal-information {
     margin-top: 20px;
 }
 
-.informacoes-pessoais h2 {
-    font-size: 1.8em;
+/* Styles for the right column */
+.right-column {
+    margin-left: 270px; /* Offset to avoid the left column */
+    padding: 20px;
+    flex-grow: 1; /* Allow the right column to take up remaining space */
 }
 
-.informacoes-pessoais p {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
-
-.contato p {
-    margin: 10px 0;
-}
-
-.contato i {
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-
-/* Links Úteis */
-.links-uteis h3 {
+/* Skills section */
+.skills {
     margin-top: 20px;
 }
 
-.links-uteis ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.links-uteis ul li {
-    margin: 10px 0;
-}
-
-.links-uteis ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-.links-uteis ul li a:hover {
-    text-decoration: underline;
-}
-
-.links-uteis ul li i {
-    margin-right: 10px;
-}
-
-/* Coluna Direita - Rolável */
-.coluna-direita {
-    margin-left: 25%; /* Margem para deixar espaço para a coluna esquerda */
-    flex: 1;
-    padding: 20px;
-    background-color: white;
-    overflow-y: auto;
-    height: 100vh; /* Para garantir que tenha o scroll vertical */
-    box-sizing: border-box;
-}
-
-/* Seção Habilidades */
-.habilidades {
-    margin-bottom: 40px;
-}
-
-.habilidades h2 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-}
-
+/* Collapsible button styles */
 .collapsible {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #e7e7e7; /* Background color for collapsible buttons */
+    color: #333;
     cursor: pointer;
     padding: 10px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    font-size: 16px;
 }
 
-.collapsible:hover {
-    background-color: #45a049;
-}
-
+/* Content styles for collapsible sections */
 .content {
     padding: 0 18px;
-    display: none;
+    display: none; /* Hidden by default */
     overflow: hidden;
-    background-color: #f1f1f1;
 }
 
-.content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.content ul li {
-    margin: 5px 0;
-    font-size: 1em;
-}
-
-/* Grid Container */
+/* Project grid styles */
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Space between grid items */
 }
 
-.projeto {
-    flex: 1 1 calc(50% - 20px); /* Dois projetos por linha com margem */
-    box-sizing: border-box;
+/* Project styles */
+.project img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Slightly rounded corners */
 }
 
-.projeto img {
-    width: 100%;
-    height: 150px; /* Altura fixa para formar retângulo */
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.descricao {
-    padding: 10px 0;
-}
-
-/* Estilo para botões colapsáveis e conteúdo */
-button.collapsible {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+.description {
     padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-button.collapsible:hover {
-    background-color: #45a049;
-}
-
-div.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-div.content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-div.content ul li {
-    margin: 5px 0;
-    font-size: 1em;
 }
