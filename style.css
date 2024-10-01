@@ -1,123 +1,95 @@
-/* General styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    background-color: #00BFFF; /* Azul Turquesa */
-    color: white; /* Cor do texto em branco para contraste */
+    background-color: #40E0D0; /* Azul turquesa */
 }
 
-/* Container to hold both columns */
 .container {
     display: flex;
-    width: 100%;
+    height: 100vh;
 }
 
-/* Fixed Left Column Styles */
 .left-column {
-    width: 250px; /* Fixed width for the left column */
-    background-color: #008CBA; /* Azul mais escuro para a coluna */
+    background-color: #fff; /* Cor de fundo da coluna esquerda */
+    width: 30%; /* Ajuste conforme necessário */
     padding: 20px;
-    position: fixed; /* Fixes the left column */
-    height: 100vh; /* Full height of the viewport */
-    overflow-y: auto; /* Allows scrolling if content is too long */
-    border-right: 2px solid #fff; /* Border for separation */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
-/* Styles for Profile Photo */
-.profile-photo {
-    text-align: center; /* Center the photo */
-}
-
-.profile-photo img {
-    width: 100%; /* Make the image responsive */
-    border-radius: 50%; /* Circular image */
-}
-
-/* Styles for Personal Information */
-.personal-information {
-    margin-top: 20px;
+.left-column h2,
+.left-column p {
     text-align: center; /* Centraliza o texto */
 }
 
-/* Contact information */
-.contact p {
-    margin: 5px 0; /* Space between contact info items */
+.profile-photo img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Deixa a imagem circular */
 }
 
-/* Useful Links Styles */
-.useful-links {
+.personal-information {
     margin-top: 20px;
 }
 
-/* Right Column Styles */
-.right-column {
-    margin-left: 270px; /* Leave space for the left column */
-    padding: 20px;
-    flex-grow: 1; /* Allow the right column to grow */
+.contact,
+.useful-links {
+    margin-top: 15px;
 }
 
-/* Skills Section Styles */
+.useful-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.useful-links li {
+    margin: 10px 0;
+}
+
+.right-column {
+    width: 70%; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Permite rolagem se o conteúdo for grande */
+    padding: 20px;
+}
+
 h2 {
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Space below headings */
+    color: #333; /* Cor do título */
 }
 
 button.collapsible {
-    background-color: #005f7f; /* Azul mais escuro para botões */
-    color: white; /* Cor do texto em branco */
+    background-color: #40E0D0; /* Azul turquesa para botões */
+    color: white;
     cursor: pointer;
     padding: 10px;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 1.1em; /* Tamanho maior do texto dos botões */
-    width: 100%; /* Largura total dos botões */
-    border-radius: 5px; /* Bordas arredondadas */
-    margin-bottom: 10px; /* Espaçamento entre os botões */
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
 }
 
-/* Content Styles */
+button.collapsible:hover {
+    background-color: #36b1a0; /* Tom mais escuro ao passar o mouse */
+}
+
 .content {
-    padding: 10px;
-    background-color: #007B9A; /* Fundo para conteúdo */
-    border-radius: 5px; /* Bordas arredondadas */
-    display: none; /* Esconde o conteúdo por padrão */
-}
-
-/* Project Styles */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria uma grade responsiva */
-    gap: 20px; /* Espaço entre os projetos */
-    margin-top: 20px; /* Espaçamento acima da grade */
+    padding: 0 15px;
+    display: none; /* Inicialmente escondido */
+    overflow: hidden;
 }
 
 .project {
-    background-color: #007B9A; /* Fundo dos projetos */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px;
-    text-align: center; /* Centraliza o texto dos projetos */
+    margin: 20px 0;
+    text-align: center; /* Centraliza o texto das descrições de projetos */
 }
 
-.project img {
-    width: 100%; /* Imagem responsiva */
-    border-radius: 5px; /* Bordas arredondadas para imagens */
-}
-
-/* Description Styles */
-.description {
-    margin-top: 10px; /* Espaço entre a imagem e a descrição */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .left-column {
-        width: 100px; /* Coluna mais estreita em telas menores */
-    }
-    
-    .right-column {
-        margin-left: 120px; /* Ajuste na margem */
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Espaço entre os projetos */
 }
