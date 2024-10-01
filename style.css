@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #00BFFF; /* Azul Turquesa */
+    color: white; /* Cor do texto em branco para contraste */
 }
 
 /* Container to hold both columns */
@@ -15,12 +17,12 @@ body {
 /* Fixed Left Column Styles */
 .left-column {
     width: 250px; /* Fixed width for the left column */
-    background-color: #f4f4f4; /* Light background color */
+    background-color: #008CBA; /* Azul mais escuro para a coluna */
     padding: 20px;
     position: fixed; /* Fixes the left column */
     height: 100vh; /* Full height of the viewport */
     overflow-y: auto; /* Allows scrolling if content is too long */
-    border-right: 1px solid #ccc; /* Optional border for separation */
+    border-right: 2px solid #fff; /* Border for separation */
 }
 
 /* Styles for Profile Photo */
@@ -36,6 +38,7 @@ body {
 /* Styles for Personal Information */
 .personal-information {
     margin-top: 20px;
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Contact information */
@@ -45,4 +48,76 @@ body {
 
 /* Useful Links Styles */
 .useful-links {
-    margin-top: 20px
+    margin-top: 20px;
+}
+
+/* Right Column Styles */
+.right-column {
+    margin-left: 270px; /* Leave space for the left column */
+    padding: 20px;
+    flex-grow: 1; /* Allow the right column to grow */
+}
+
+/* Skills Section Styles */
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+button.collapsible {
+    background-color: #005f7f; /* Azul mais escuro para botões */
+    color: white; /* Cor do texto em branco */
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em; /* Tamanho maior do texto dos botões */
+    width: 100%; /* Largura total dos botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento entre os botões */
+}
+
+/* Content Styles */
+.content {
+    padding: 10px;
+    background-color: #007B9A; /* Fundo para conteúdo */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: none; /* Esconde o conteúdo por padrão */
+}
+
+/* Project Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria uma grade responsiva */
+    gap: 20px; /* Espaço entre os projetos */
+    margin-top: 20px; /* Espaçamento acima da grade */
+}
+
+.project {
+    background-color: #007B9A; /* Fundo dos projetos */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px;
+    text-align: center; /* Centraliza o texto dos projetos */
+}
+
+.project img {
+    width: 100%; /* Imagem responsiva */
+    border-radius: 5px; /* Bordas arredondadas para imagens */
+}
+
+/* Description Styles */
+.description {
+    margin-top: 10px; /* Espaço entre a imagem e a descrição */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .left-column {
+        width: 100px; /* Coluna mais estreita em telas menores */
+    }
+    
+    .right-column {
+        margin-left: 120px; /* Ajuste na margem */
+    }
+}
