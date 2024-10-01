@@ -11,8 +11,8 @@ body {
 }
 
 .left-column {
-    background-color: #36B1A0; /* Cor de fundo da coluna esquerda */
-    width: 20%; /* Ajuste conforme necessário */
+    background-color: #36B1A0 !important; /* Cor de fundo da coluna esquerda */
+    width: 20% !important; /* Ajuste conforme necessário */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
