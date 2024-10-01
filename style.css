@@ -46,12 +46,12 @@ body {
 .useful-links .icons a {
     margin: 0 10px; /* Espaçamento entre os ícones */
     font-size: 24px; /* Tamanho do ícone */
-    color: #000; /* Cor do ícone, ajuste conforme necessário */
+    color: #000000 !important; /* Cor do ícone, ajuste conforme necessário */
     text-decoration: none; /* Remove o sublinhado */
 }
 
 .useful-links .icons a:hover {
-    color: #36B1A0; /* Cor ao passar o mouse, ajuste conforme necessário */
+    color: #FFFFFF !important; /* Cor ao passar o mouse, ajuste conforme necessário */
 }
 
 .icons {
