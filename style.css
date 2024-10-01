@@ -54,6 +54,7 @@ body {
     width: 70%; /* Ajuste conforme necessário */
     overflow-y: auto; /* Permite rolagem se o conteúdo for grande */
     padding: 20px;
+    background-color: #fff; /* Fundo branco para a coluna da direita */
 }
 
 h2 {
@@ -90,6 +91,11 @@ button.collapsible:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de largura igual */
     gap: 20px; /* Espaço entre os projetos */
+}
+
+.grid-container img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura da célula */
+    height: auto; /* Mantém a proporção da imagem */
 }
