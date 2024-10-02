@@ -133,7 +133,7 @@ button.collapsible:hover {
     border: 5px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
     border-radius: 10px; /* Arredondamento suave da borda */
     display: block; /* Faz a imagem ser um bloco para aplicar margens */
-    margin: 0 auto; /* Centraliza a imagem */
+    margin: 0; /* Centraliza a imagem */
 }
 
 /* Estilo da descrição do projeto */
