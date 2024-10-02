@@ -123,8 +123,8 @@ button.collapsible:hover {
     width: 100%; /* Ajusta para ocupar 100% do contêiner */
     height: 250px !important; /* Altura fixa para garantir uniformidade */
     object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
-    border: 3px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
-    border-radius: 5px; /* Arredondamento suave da borda */
+    border: 10px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
+    border-radius: 10px; /* Arredondamento suave da borda */
     display: block; /* Faz a imagem ser um bloco para aplicar margens */
     margin: 0 auto; /* Centraliza a imagem */
 }
