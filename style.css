@@ -123,14 +123,16 @@ button.collapsible:hover {
     flex-direction: column; /* Organiza os elementos em coluna */
     align-items: center; /* Centraliza horizontalmente */
     padding: 15px; /* Adiciona padding ao projeto para espaço interno */
+    width: 100%; /* Faz o projeto ocupar toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
 }
 
 /* Estilo para a imagem do projeto */
 .project a img {
-    max-width: 90%; /* Limita a largura máxima da imagem */
-    height: 250px !important; /* Altura fixa para garantir uniformidade */
-    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
-    border: 10px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
+    width: 100%; /* A imagem preencherá toda a largura do contêiner */
+    height: 200px; /* Altura fixa para o retângulo */
+    object-fit: cover; /* Garante que a imagem se ajuste ao retângulo sem distorção */
+    border: 1px solid #fff !important; /* Borda finíssima ao redor da imagem */
     border-radius: 10px; /* Arredondamento suave da borda */
     display: block; /* Faz a imagem ser um bloco para aplicar margens */
     margin: 0 auto; /* Centraliza a imagem */
@@ -143,6 +145,8 @@ button.collapsible:hover {
     color: #fff; /* Texto branco para contraste */
     text-align: justify; /* Texto justificado */
     border-radius: 0 0 5px 5px; /* Arredondamento dos cantos inferiores */
+    width: 100%; /* Descrição com a mesma largura da imagem */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura */
 }
 
 /* Estilo para a nova seção Currículos */
