@@ -47,7 +47,6 @@ body {
     text-align: center;
 }
 
-
 .curriculos h3 {
     margin-bottom: 10px;
 }
@@ -211,7 +210,6 @@ button.collapsible.active:after {
     height: auto;
 }
 
-
 /* Estilos para a grid de projetos de Data Science */
 .grid-container {
     display: grid;
@@ -240,6 +238,17 @@ button.collapsible.active:after {
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito */
+}
+
+/* Adiciona sombra ao passar o mouse sobre as imagens dos projetos */
+.project a img:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra quando o mouse passa */
+}
+
+/* Efeito de clique (escurecimento da imagem) */
+.project a img:active {
+    filter: brightness(0.85); /* Escurece levemente a imagem ao clicar */
 }
 
 .description {
