@@ -121,12 +121,13 @@ button.collapsible:hover {
     display: flex; /* Ativa o layout flexível */
     flex-direction: column; /* Organiza os elementos em coluna */
     align-items: center; /* Centraliza horizontalmente */
-    padding: 0; /* Remove padding para evitar espaços extras */
+    padding: 15px; /* Adiciona padding ao projeto para espaço interno */
 }
 
 /* Estilo para a imagem do projeto */
 .project a img {
-    width: 100%; /* Ajusta para ocupar 100% do contêiner */
+    width: auto; /* Ajusta a largura da imagem para não ser 100% */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
     height: 250px !important; /* Altura fixa para garantir uniformidade */
     object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
     border: 10px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
