@@ -47,9 +47,14 @@ body {
     text-align: center;
 }
 
-.useful-links h3,
+
 .curriculos h3 {
     margin-bottom: 10px;
+}
+
+.useful-links h3 {
+    margin-bottom: 10px;
+    text-align: center; /* Adicione esta linha para garantir que o título esteja centralizado */
 }
 
 .useful-links .icons {
