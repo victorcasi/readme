@@ -232,14 +232,15 @@ button.collapsible.active:after {
 }
 
 .project a img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border: 1px solid #fff !important;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-    transition: box-shadow 0.3s ease; /* Transição suave para o efeito */
+    width: 100%; /* Garantir que a imagem ocupe 100% da largura do contêiner */
+    height: 100%; /* Mantém a proporção original da imagem */
+    object-fit: cover; /* Corta a imagem de forma proporcional para preencher o espaço */
+    border: 1px solid #fff !important; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+    max-height: 200px; /* Define uma altura máxima para as imagens, pode ajustar conforme necessário */
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
 }
 
 /* Adiciona sombra ao passar o mouse sobre as imagens dos projetos */
