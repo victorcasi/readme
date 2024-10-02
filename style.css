@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5DC; /* Bege claro para o fundo */
+    background-color: #000; /* Fundo preto */
 }
 
 .container {
@@ -11,25 +11,25 @@ body {
 }
 
 .left-column {
-    background-color: #D3D3D3 !important; /* Cinza claro para a coluna esquerda */
-    width: 20% !important; /* Ajuste conforme necessário */
+    background-color: #00BFFF !important; /* Azul claro para a coluna esquerda */
+    width: 20% !important;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;
+    justify-content: center;
 }
 
 .left-column h2,
 .left-column p {
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .profile-photo img {
-    width: 200px !important; /* Ajuste conforme necessário */
-    height: auto !important; /* Mantém a proporção da imagem */
-    border-radius: 50%; /* Deixa a imagem circular */
+    width: 200px !important;
+    height: auto !important;
+    border-radius: 50%;
 }
 
 .personal-information {
@@ -39,51 +39,75 @@ body {
 .contact,
 .useful-links {
     margin-top: 15px;
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center;
 }
 
 .useful-links h3,
 .curriculos h3 {
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-bottom: 10px;
 }
 
 .useful-links .icons {
-    display: flex; /* Mantém os ícones em linha */
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre os ícones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .icons {
     display: flex;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    gap: 20px; /* Espaço entre os ícones */
+    justify-content: center;
+    gap: 20px;
 }
 
 .icons a {
-    font-size: 24px; /* Ajusta o tamanho dos ícones */
-    color: #000 !important; /* Cor dos ícones */
-    text-decoration: none; /* Remove sublinhado dos links */
-    margin: 5px 0; /* Espaçamento entre os links */
+    font-size: 24px;
+    color: #000 !important;
+    text-decoration: none;
+    margin: 5px 0;
 }
 
 .icons a:hover {
-    color: #A9A9A9 !important; /* Cinza escuro ao passar o mouse */
+    color: #00BFFF !important;
 }
 
 .right-column {
-    width: 80%; /* Ajuste conforme necessário */
-    overflow-y: auto; /* Permite rolagem se o conteúdo for grande */
+    width: 80%;
+    overflow-y: auto;
     padding: 20px;
-    background-color: #FFF8DC; /* Bege claro para a coluna direita */
+    background-color: #fff;
 }
 
 h2 {
-    color: #333; /* Cor do título */
+    color: #00BFFF; /* Cor dos títulos */
 }
 
+/* Estilos para a seção de Experiências Profissionais */
+#experiences {
+    margin-bottom: 20px; /* Espaçamento inferior para separar das seções seguintes */
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between; /* Espaçamento igual entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
+}
+
+.experience {
+    text-align: center;
+    flex: 1; /* Permite que os itens cresçam igualmente */
+    min-width: 100px; /* Largura mínima para evitar que fique muito pequeno */
+}
+
+.experience-logo {
+    width: 50px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    margin-bottom: 5px; /* Espaçamento entre o logo e o texto */
+}
+
+/* Estilos para os botões expansíveis */
 button.collapsible {
-    background-color: #D3D3D3; /* Cinza claro para os botões */
+    background-color: #4169E1;
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -96,100 +120,97 @@ button.collapsible {
 }
 
 button.collapsible:hover {
-    background-color: #A9A9A9; /* Cinza escuro ao passar o mouse */
+    background-color: #00BFFF;
+}
+
+button.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+button.collapsible.active:after {
+    content: "\2212";
 }
 
 .content {
     padding: 0 15px;
-    display: none; /* Inicialmente escondido */
+    display: none;
     overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 4px solid #00BFFF;
+    padding: 10px;
 }
 
-/* Estilo geral da grid de projetos */
+/* Estilo para a seção Skills e Education */
+#skills-education {
+    display: flex;
+    gap: 20px;
+}
+
+.skills-column,
+.education-column {
+    width: 50%;
+}
+
+/* Ajustes para alinhar as bordas superiores e inferiores */
+.education-column .education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha os botões para ocupar a mesma altura */
+    flex-grow: 1; /* Faz com que a coluna da educação cresça */
+}
+
+.skills-column .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha os botões para ocupar a mesma altura */
+    flex-grow: 1; /* Faz com que a coluna de habilidades cresça */
+}
+
+.school-logo {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Estilos para a grid de projetos de Data Science */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de largura igual */
-    gap: 20px; /* Espaço entre os projetos */
-    padding: 0 20px; /* Adiciona padding para equilibrar margens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-/* Estilo para cada projeto */
 .project {
-    background-color: #D3D3D3 !important; /* Cinza claro para o fundo dos projetos */
-    border-radius: 10px; /* Arredondar os cantos */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
-    display: flex; /* Ativa o layout flexível */
-    flex-direction: column; /* Organiza os elementos em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    padding: 15px; /* Adiciona padding ao projeto para espaço interno */
-    width: 100%; /* Faz o projeto ocupar toda a largura disponível */
-    box-sizing: border-box; /* Inclui padding e bordas na largura total */
-}
-
-/* Estilo para a imagem do projeto */
-.project a img {
-    width: 100%; /* A imagem preencherá toda a largura do contêiner */
-    height: 200px; /* Altura fixa para o retângulo */
-    object-fit: cover; /* Garante que a imagem se ajuste ao retângulo sem distorção */
-    border: 1px solid #fff !important; /* Borda finíssima ao redor da imagem */
-    border-radius: 10px; /* Arredondamento suave da borda */
-    display: block; /* Faz a imagem ser um bloco para aplicar margens */
-    margin: 0 auto; /* Centraliza a imagem */
-}
-
-/* Estilo da descrição do projeto */
-.description {
-    background-color: #A9A9A9 !important; /* Cinza escuro para a descrição */
-    padding: 15px;
-    color: #fff; /* Texto branco para contraste */
-    text-align: justify; /* Texto justificado */
-    border-radius: 0 0 5px 5px; /* Arredondamento dos cantos inferiores */
-    width: 100%; /* Descrição com a mesma largura da imagem */
-    box-sizing: border-box; /* Garante que o padding seja incluído na largura */
-}
-
-/* Estilo para a nova seção Currículos */
-.curriculos {
-    margin-top: 15px; /* Espaçamento acima da seção */
-    text-align: center; /* Centraliza o conteúdo */
-}
-
-.curriculos .icons {
+    background-color: #4169E1 !important;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     display: flex;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre as bandeiras */
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.flag-icon {
-    width: 24px; /* Ajuste o tamanho da bandeira */
-    height: auto; /* Mantém a proporção */
+.project a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #fff !important;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Estilos para a seção Skills e Education */
-#skills-education {
-    display: flex; /* Para organizar as colunas lado a lado */
-    gap: 20px; /* Espaço entre as colunas */
-}
-
-.skills-column, .education-column {
-    width: 50%; /* Cada coluna ocupa 50% da largura */
-}
-
-.education-column h2 {
-    color: #333; /* Cor do título da seção Education */
-}
-
-.education-column ul {
-    list-style-type: none; /* Remove marcadores de lista */
-    padding-left: 0; /* Remove o padding padrão */
-}
-
-.education-column li {
-    background-color: #D3D3D3; /* Fundo cinza claro para os itens da lista */
-    margin-bottom: 10px; /* Espaço entre os itens */
-    padding: 10px; /* Espaço interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+.description {
+    background-color: #4169E1 !important;
+    padding: 15px;
+    color: #fff;
+    text-align: justify;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
