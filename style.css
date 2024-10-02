@@ -96,11 +96,7 @@ h2 {
 .experience {
     text-align: center;
     flex: 1; /* Permite que os itens cresçam igualmente */
-    min-width: 150px; /* Largura mínima para evitar que fique muito pequeno */
-    display: flex; /* Flexbox para alinhar conteúdo */
-    flex-direction: column; /* Direção vertical */
-    align-items: center; /* Centraliza horizontalmente */
-    margin: 10px; /* Espaçamento entre experiências */
+    min-width: 100px; /* Largura mínima para evitar que fique muito pequeno */
 }
 
 .experience-logo {
@@ -177,24 +173,6 @@ button.collapsible.active:after {
     width: 24px;
     height: auto;
     margin-right: 10px;
-}
-
-/* Estilo para a nova seção Currículos */
-.curriculos {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.curriculos .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.flag-icon {
-    width: 24px;
-    height: auto;
 }
 
 /* Estilos para a grid de projetos de Data Science */
