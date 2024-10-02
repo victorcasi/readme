@@ -175,6 +175,24 @@ button.collapsible.active:after {
     margin-right: 10px;
 }
 
+/* Estilo para a nova seção Currículos */
+.curriculos {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.curriculos .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.flag-icon {
+    width: 24px;
+    height: auto;
+}
+
 /* Estilos para a grid de projetos de Data Science */
 .grid-container {
     display: grid;
