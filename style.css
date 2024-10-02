@@ -241,3 +241,17 @@ button.collapsible.active:after {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* Estilo para a linha horizontal */
+.separator {
+    border: none; /* Remove a borda padrão */
+    height: 1px; /* Define a altura da linha */
+    background-color: #000; /* Cor da linha */
+    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+/* Estilo para a seção Contatos */
+.contatos {
+    margin-top: 15px; /* Espaçamento acima da seção */
+    text-align: center; /* Centraliza o texto */
+}
