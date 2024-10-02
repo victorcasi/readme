@@ -91,14 +91,16 @@ h2 {
     display: flex;
     justify-content: space-between; /* Espaçamento igual entre os itens */
     flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
-    align-items: flex-start; /* Alinha todos os itens pelo topo */
 }
 
 .experience {
     text-align: center;
     flex: 1; /* Permite que os itens cresçam igualmente */
-    min-width: 100px; /* Largura mínima para evitar que fique muito pequeno */
-    min-height: 120px; /* Ajuste esta altura conforme necessário */
+    min-width: 150px; /* Largura mínima para evitar que fique muito pequeno */
+    display: flex; /* Flexbox para alinhar conteúdo */
+    flex-direction: column; /* Direção vertical */
+    justify-content: space-between; /* Espaça itens de forma que fiquem alinhados */
+    height: 150px; /* Define uma altura fixa para garantir o alinhamento */
 }
 
 .experience-logo {
