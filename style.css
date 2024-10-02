@@ -27,8 +27,8 @@ body {
 }
 
 .profile-photo img {
-    width: 200px !important; /* Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 300px !important; /* Ajuste conforme necessário */
+    height: 300px !important; /* Mantém a proporção da imagem */
     border-radius: 50%; /* Deixa a imagem circular */
 }
 
