@@ -27,7 +27,7 @@ body {
 }
 
 .profile-photo img {
-    width: 300px !important; /* Ajuste conforme necessário */
+    width: 200px !important; /* Ajuste conforme necessário */
     height: auto !important; /* Mantém a proporção da imagem */
     border-radius: 50%; /* Deixa a imagem circular */
 }
@@ -165,4 +165,31 @@ button.collapsible:hover {
 .flag-icon {
     width: 24px; /* Ajuste o tamanho da bandeira */
     height: auto; /* Mantém a proporção */
+}
+
+/* Estilos para a seção Skills e Education */
+#skills-education {
+    display: flex; /* Para organizar as colunas lado a lado */
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+.skills-column, .education-column {
+    width: 50%; /* Cada coluna ocupa 50% da largura */
+}
+
+.education-column h2 {
+    color: #333; /* Cor do título da seção Education */
+}
+
+.education-column ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding-left: 0; /* Remove o padding padrão */
+}
+
+.education-column li {
+    background-color: #D3D3D3; /* Fundo cinza claro para os itens da lista */
+    margin-bottom: 10px; /* Espaço entre os itens */
+    padding: 10px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
