@@ -114,7 +114,7 @@ button.collapsible:hover {
 /* Estilo para a imagem do projeto */
 .project a img {
     max-width: 100%; /* Limita a largura máxima da imagem à largura do contêiner */
-    height: 200px; /* Altura fixa para garantir uniformidade */
+    height: 300px; /* Altura fixa para garantir uniformidade */
     object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
     border: 5px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
     border-radius: 5px; /* Arredondamento suave da borda */
