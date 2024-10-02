@@ -122,18 +122,25 @@ button.collapsible:hover {
     display: flex; /* Ativa o layout flexível */
     flex-direction: column; /* Organiza os elementos em coluna */
     align-items: center; /* Centraliza horizontalmente */
-    padding: 15px; /* Adiciona padding ao projeto para espaço interno */
+    padding: 0; /* Remove padding para evitar espaços extras */
+    height: 300px; /* Ajuste a altura conforme necessário */
 }
 
 /* Estilo para a imagem do projeto */
+.project a {
+    width: 100%; /* Garante que o link ocupe toda a largura do contêiner */
+    height: 100%; /* Garante que o link ocupe toda a altura do contêiner */
+    display: block; /* Faz o link ser um bloco */
+}
+
 .project a img {
-    max-width: 100%; /* Limita a largura máxima da imagem */
-    height: 250px !important; /* Altura fixa para garantir uniformidade */
-    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
+    width: 100%; /* A imagem ocupa 100% da largura do link */
+    height: 100%; /* A imagem ocupa 100% da altura do link */
+    object-fit: cover; /* A imagem é cortada proporcionalmente para preencher o contêiner */
     border: 5px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
     border-radius: 10px; /* Arredondamento suave da borda */
     display: block; /* Faz a imagem ser um bloco para aplicar margens */
-    margin: 0; /* Centraliza a imagem */
+    margin: 0; /* Remove a margem para evitar espaços extras */
 }
 
 /* Estilo da descrição do projeto */
@@ -144,7 +151,6 @@ button.collapsible:hover {
     text-align: justify; /* Texto justificado */
     border-radius: 0 0 5px 5px; /* Arredondamento dos cantos inferiores */
 }
-
 /* Estilo para a nova seção Currículos */
 .curriculos {
     margin-top: 15px; /* Espaçamento acima da seção */
