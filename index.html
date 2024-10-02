@@ -1,135 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
-    <script src="script.js" defer></script> <!-- Link to the JS file -->
-</head>
-<body>
-    <div class="container">
-        <!-- Fixed Left Column -->
-        <div class="left-column">
-            <div class="profile-photo">
-                <img src="photo-profile.jpg" alt="My Photo">
-            </div>
-            <div class="personal-information">
-                <h2>Victor</h2>
-                <p>Data Science and Analytics.</p>
-                <div class="contact">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Paris - France</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> + 33 06 18 70 25 33</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> victorcarvsi@gmail.com</p>
-                </div>
-                <div class="useful-links">
-                    <h3>Useful Links</h3>
-                    <div class="icons">
-                        <a href="https://www.linkedin.com/in/victorcasi/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/victorcasi" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #40E0D0; /* Azul turquesa */
+}
 
-                <!-- Nova seção de Currículos -->
-                <div class="curriculos">
-                    <h3>Currículos</h3>
-                    <div class="icons">
-                        <a href="https://path-to-your-portuguese-cv.pdf" target="_blank">
-                            <img src="round.png" class="flag-icon">
-                        </a>
-                        <a href="https://path-to-your-english-cv.pdf" target="_blank">
-                            <img src="usa.png" class="flag-icon">
-                        </a>
-                        <a href="https://raw.githubusercontent.com/victorcasi/readme/main/(Fr%202)%20Victor%20C%20Silva%20CV.pdf" target="_blank">
-                            <img src="france.png"  class="flag-icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+.container {
+    display: flex;
+    height: 100vh;
+}
 
-        <!-- Scrollable Right Column -->
-        <div class="right-column">
-            <!-- Skills Section -->
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills">
-                    <button class="collapsible">Programming Skills</button>
-                    <div class="content">
-                        <ul>
-                            <li>Python (Numpy, Pandas, Sklearn, Tensorflow, Matplotlib)</li>
-                            <li>R Studio</li>
-                            <li>SQL</li>
-                            <li>Machine Learning</li>
-                            <li>Data Analysis</li>
-                        </ul>
-                    </div>
-                    
-                    <button class="collapsible">Cloud and Analytics</button>
-                    <div class="content">
-                        <ul>
-                            <li>Google Cloud Platform/GCP (BigQuery, Vertex AI)</li>
-                            <li>Salesforce (Marketing Cloud, CDP, and Einstein)</li>
-                            <li>SAS (CI, Guide, and Viya)</li>
-                            <li>Google Ad Manager and Analytics</li>
-                        </ul>
-                    </div>
+.left-column {
+    background-color: #36B1A0 !important; /* Cor de fundo da coluna esquerda */
+    width: 20% !important; /* Ajuste conforme necessário */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
 
-                    <button class="collapsible">Data Visualization and Tools</button>
-                    <div class="content">
-                        <ul>
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                            <li>Excel</li>
-                            <li>PowerPoint</li>
-                        </ul>
-                    </div>
+.left-column h2,
+.left-column p {
+    text-align: center; /* Centraliza o texto */
+}
 
-                    <button class="collapsible">Project Management and Collaboration</button>
-                    <div class="content">
-                        <ul>
-                            <li>Jira</li>
-                            <li>Confluence</li>
-                            <li>Agile</li>
-                        </ul>
-                    </div>
+.profile-photo img {
+    width: 300px !important; /* Ajuste conforme necessário */
+    height: auto !important; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Deixa a imagem circular */
+}
 
-                    <button class="collapsible">Big Data Technologies</button>
-                    <div class="content">
-                        <ul>
-                            <li>Hadoop</li>
-                            <li>GitHub</li>
-                            <li>GitLab</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+.personal-information {
+    margin-top: 20px;
+}
 
-            <!-- Data Science Section -->
-            <section id="data-science">
-                <h2>Data Science Projects</h2>
-                <div class="grid-container">
-                    <div class="project">
-                        <a href="https://github.com/victorcasi/data_science/tree/main/projects/Renault" target="_blank">
-                            <img src="Renault.jpg" alt="Data Science Project 1">
-                        </a>
-                        <div class="description">
-                            <p><strong>Overview:</strong> This project, realized at Renault Group, focus on optimizing automotive components through customer usage data analysis, applying statistical techniques like bootstrap and regression to construct confidence intervals.</p>
-                            <p><strong>Tools:</strong> Python for Statistics and Machine Learning, Jupyter Notebook, GCP (Vertex AI, BigQuery) </p>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/victorcasi/data_science/tree/main/projects" target="_blank">
-                            <img src="under.jpeg" alt="Data Science Project 2">
-                        </a>
-                        <div class="description">
-                            <p><strong>Overview:</strong> New projects will be uploaded soon.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</body>
-</html>
+.contact,
+.useful-links {
+    margin-top: 15px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.useful-links h3,
+.curriculos h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.useful-links .icons {
+    display: flex; /* Mantém os ícones em linha */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+.icons a {
+    font-size: 24px; /* Ajusta o tamanho dos ícones */
+    color: #000 !important; /* Cor dos ícones */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 5px 0; /* Espaçamento entre os links */
+}
+
+.icons a:hover {
+    color: #fff !important; /* Muda a cor dos ícones ao passar o mouse */
+}
+
+.right-column {
+    width: 80%; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Permite rolagem se o conteúdo for grande */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para a coluna da direita */
+}
+
+h2 {
+    color: #333; /* Cor do título */
+}
+
+button.collapsible {
+    background-color: #40E0D0; /* Azul turquesa para botões */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button.collapsible:hover {
+    background-color: #36b1a0; /* Tom mais escuro ao passar o mouse */
+}
+
+.content {
+    padding: 0 15px;
+    display: none; /* Inicialmente escondido */
+    overflow: hidden;
+}
+
+/* Estilo geral da grid de projetos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de largura igual */
+    gap: 20px; /* Espaço entre os projetos */
+    padding: 0 20px; /* Adiciona padding para equilibrar margens */
+}
+
+/* Estilo para cada projeto */
+.project {
+    background-color: #36B1A0 !important; /* Fundo para manter contraste */
+    border-radius: 10px; /* Arredondar os cantos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 15px; /* Adiciona padding ao projeto para espaço interno */
+}
+
+/* Estilo para a imagem do projeto */
+.project a img {
+    max-width: 90%; /* Limita a largura máxima da imagem */
+    height: 250px !important; /* Altura fixa para garantir uniformidade */
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
+    border: 10px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
+    border-radius: 10px; /* Arredondamento suave da borda */
+    display: block; /* Faz a imagem ser um bloco para aplicar margens */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Estilo da descrição do projeto */
+.description {
+    background-color: #36B1A0 !important; /* Fundo azul turquesa */
+    padding: 15px;
+    color: #fff; /* Texto branco para contraste */
+    text-align: justify; /* Texto justificado */
+    border-radius: 0 0 5px 5px; /* Arredondamento dos cantos inferiores */
+}
+
+/* Estilo para a nova seção Currículos */
+.curriculos {
+    margin-top: 15px; /* Espaçamento acima da seção */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.curriculos .icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre as bandeiras */
+}
+
+.flag-icon {
+    width: 24px; /* Ajuste o tamanho da bandeira */
+    height: auto; /* Mantém a proporção */
+}
