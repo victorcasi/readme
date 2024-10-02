@@ -36,8 +36,13 @@ body {
     margin-top: 20px;
 }
 
+.personal-information h2 {
+    color: #000; /* Define a cor do nome como branco */
+    margin: 0; /* Remove margens para centralização perfeita */
+}
+
 .contact,
-.useful-links {
+.useful-linksx {
     margin-top: 15px;
     text-align: center;
 }
