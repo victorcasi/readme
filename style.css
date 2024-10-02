@@ -158,6 +158,6 @@ button.collapsible:hover {
 }
 
 .flag-icon {
-    width: 50px; /* Ajuste o tamanho da bandeira */
+    width: 24px; /* Ajuste o tamanho da bandeira */
     height: auto; /* Mantém a proporção */
 }
