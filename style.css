@@ -231,18 +231,22 @@ button.collapsible.active:after {
     box-sizing: border-box;
 }
 
+.project a {
+    width: 100%; /* Garante que o link ocupe toda a largura do contêiner */
+    display: block; /* Faz com que o link se comporte como um bloco */
+    position: relative; /* Permite que os filhos sejam posicionados em relação a ele */
+}
+
 .project a img {
-    width: 100%; /* Garantir que a imagem ocupe 100% da largura do contêiner */
-    height: 100%; /* Mantém a proporção original da imagem */
-    object-fit: cover; /* Corta a imagem de forma proporcional para preencher o espaço */
+    width: 100%; /* A imagem ocupa 100% da largura do link */
+    height: 200px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Corta a imagem para preencher o espaço, possivelmente distorcendo-a */
     border: 1px solid #fff !important; /* Borda branca */
     border-radius: 10px; /* Bordas arredondadas */
     display: block; /* Garante que a imagem seja tratada como um bloco */
     margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
-    max-height: 200px; /* Define uma altura máxima para as imagens, pode ajustar conforme necessário */
     box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
 }
-
 /* Adiciona sombra ao passar o mouse sobre as imagens dos projetos */
 .project a img:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra quando o mouse passa */
