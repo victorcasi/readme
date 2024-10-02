@@ -98,15 +98,17 @@ h2 {
     flex: 1; /* Permite que os itens cresçam igualmente */
     min-width: 150px; /* Largura mínima para evitar que fique muito pequeno */
     display: flex; /* Flexbox para alinhar conteúdo */
-    flex-direction: column; /* Direção vertical */
+    flex-direction: row; /* Direção horizontal */
     justify-content: space-between; /* Espaça itens de forma que fiquem alinhados */
-    height: 150px; /* Define uma altura fixa para garantir o alinhamento */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    height: 80px; /* Ajuste a altura conforme necessário */
+    padding: 10px; /* Espaçamento interno */
 }
 
 .experience-logo {
     width: 50px; /* Ajuste o tamanho do logo conforme necessário */
     height: auto;
-    margin-bottom: 5px; /* Espaçamento entre o logo e o texto */
+    margin-right: 10px; /* Espaçamento entre o logo e o texto */
 }
 
 /* Estilos para os botões expansíveis */
