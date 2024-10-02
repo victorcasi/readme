@@ -27,7 +27,7 @@ body {
 }
 
 .profile-photo img {
-    width: 200px !important; /* Ajuste conforme necessário */
+    width: 300px !important; /* Ajuste conforme necessário */
     height: auto !important; /* Mantém a proporção da imagem */
     border-radius: 50%; /* Deixa a imagem circular */
 }
@@ -110,6 +110,7 @@ button.collapsible:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas de largura igual */
     gap: 20px; /* Espaço entre os projetos */
+    padding: 0 20px; /* Adiciona padding para equilibrar margens */
 }
 
 /* Estilo para cada projeto */
@@ -126,8 +127,7 @@ button.collapsible:hover {
 
 /* Estilo para a imagem do projeto */
 .project a img {
-    width: auto; /* Ajusta a largura da imagem para não ser 100% */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    max-width: 90%; /* Limita a largura máxima da imagem */
     height: 250px !important; /* Altura fixa para garantir uniformidade */
     object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
     border: 10px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
