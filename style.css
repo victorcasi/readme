@@ -113,7 +113,7 @@ button.collapsible:hover {
 
 /* Estilo para a imagem do projeto */
 .project a img {
-    width: 100%; /* Faz a imagem ocupar toda a largura da célula */
+    width: 90%; /* Faz a imagem ocupar toda a largura da célula */
     height: 200px; /* Altura fixa para garantir uniformidade */
     object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
     border: 10px solid #36B1A0 !important; /* Borda fina ao redor da imagem */
