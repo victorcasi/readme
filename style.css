@@ -82,7 +82,6 @@ h2 {
     color: #00BFFF; /* Cor dos títulos */
 }
 
-/* Estilos para a seção de Experiências Profissionais */
 #experiences {
     margin-bottom: 20px; /* Espaçamento inferior para separar das seções seguintes */
 }
@@ -107,6 +106,11 @@ h2 {
     width: 50px; /* Ajuste o tamanho do logo conforme necessário */
     height: 50px; /* Altura fixa para o logo */
     margin-bottom: 5px; /* Espaçamento entre o logo e o texto */
+}
+
+.experience p {
+    margin: 2px 0; /* Reduz o espaço superior e inferior do parágrafo */
+    line-height: 1.2; /* Ajuste o valor conforme necessário */
 }
 
 /* Estilos para os botões expansíveis */
