@@ -124,7 +124,7 @@ button.collapsible:hover {
 
 /* Estilo da descrição do projeto */
 .description {
-    background-color: #40E0D0; /* Fundo azul turquesa */
+    background-color: #36B1A0 !important; /* Fundo azul turquesa */
     padding: 15px;
     color: #fff; /* Texto branco para contraste */
     text-align: justify; /* Texto justificado */
