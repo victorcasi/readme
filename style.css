@@ -12,7 +12,7 @@ body {
 
 .left-column {
     background-color: #36B1A0 !important; /* Cor de fundo da coluna esquerda */
-    width: 30% !important; /* Ajuste conforme necessário */
+    width: 20% !important; /* Ajuste conforme necessário */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -63,7 +63,7 @@ body {
 }
 
 .right-column {
-    width: 70%; /* Ajuste conforme necessário */
+    width: 80%; /* Ajuste conforme necessário */
     overflow-y: auto; /* Permite rolagem se o conteúdo for grande */
     padding: 20px;
     background-color: #fff; /* Fundo branco para a coluna da direita */
