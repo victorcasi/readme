@@ -1,229 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Victor - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
-    <script src="script.js" defer></script> <!-- Link to the JS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Carvalho - Data Science & Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Fixed Left Column -->
-        <div class="left-column">
-            <div class="profile-photo">
-                <img src="photo-profile.jpg" alt="My Photo">
-            </div>
-            <div class="personal-information">
-                <h2>Victor Carvalho</h2>
-                <p>Data Science and Analytics</p>
-                <hr class="separator"> 
-                <!-- Nova seção de Contatos -->
-                <div class="contatos">
-                    <h3>Contact</h3>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Paris - France</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> + 33 06 18 70 25 33</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> victorcarvsi@gmail.com</p>
-                </div>
-                <hr class="separator"> 
-                <div class="useful-links">
-                    <h3>Useful Links</h3>
-                    <div class="icons">
-                        <a href="https://www.linkedin.com/in/victorcasi/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/victorcasi" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <hr class="separator"> 
-                <!-- Nova seção de Currículos -->
-                <div class="curriculos">
-                    <h3>CV / Resume</h3>
-                    <div class="icons">
-                        <a href="https://path-to-your-portuguese-cv.pdf" target="_blank">
-                            <img src="round.png" alt="CV em Português" class="flag-icon">
-                        </a>
-                        <a href="https://raw.githubusercontent.com/victorcasi/readme/main/(English)%20Victor%20C%20Silva%20CV.pdf" target="_blank">
-                            <img src="usa.png" alt="CV em Inglês" class="flag-icon">
-                        </a>
-                        <a href="https://raw.githubusercontent.com/victorcasi/readme/main/(Fr%202)%20Victor%20C%20Silva%20CV.pdf" target="_blank">
-                            <img src="france.png" alt="CV em Francês" class="flag-icon">
-                        </a> 
-                    </div>
-                </div> 
-            </div>
+  <div class="hero-bg">
+    <section class="hero-section">
+      <div class="hero-avatar">
+        <img src="photo-profile.jpg" alt="Victor Carvalho">
+      </div>
+      <div class="hero-content">
+        <p class="hero-intro">Hello, my name is</p>
+        <h1 class="hero-name">Victor Carvalho</h1>
+        <div class="hero-title">Data Science & Analytics</div>
+        <div class="hero-badges">
+          <span class="badge">MSc</span>
+          <span class="badge">MBA</span>
+          <span class="badge">IT</span>
         </div>
-
-        <!-- Scrollable Right Column -->
-        <div class="right-column">
-            <!-- Experiences Section -->
-            <section id="experiences">
-                <h2>Experiences</h2>
-                <div class="experience-container">
-                    <div class="experience">
-                        <img src="renaultlogo2.jpg" alt="Logo 1" class="experience-logo">
-                        <p><strong>Renault Group</strong></p>
-                        <p>Data Scientist</p>
-                        <p>Specialization Internship</p>
-                        <p>03/2024 - Today</p>
-                    </div>
-                    <div class="experience">
-                        <img src="itau.png" alt="Logo 2" class="experience-logo">
-                        <p><strong>Itaú Unibanco</strong></p>
-                        <p>Data Analyst (CRM)</p>
-                        <p>Permanent Contract / CDI</p>
-                        <p>06/2021 - 12/2023</p>
-                    </div>
-                    <div class="experience">
-                        <img src="B3.png" alt="Logo 3" class="experience-logo">
-                        <p><strong>Brazilian Stock Exchange</strong></p>
-                        <p>Data Scientist</p>
-                        <p>Internship</p>
-                        <p>08/2018 - 08/2019</p>
-                    </div>
-                    <div class="experience">
-                        <img src="embrapalogo.jpg" alt="Logo 4" class="experience-logo">
-                        <p><strong>Embrapa</strong></p>
-                        <p>Data Analyst</p>
-                        <p>Internship</p>
-                        <p>06/2017 - 06/2018</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section id="skills-education">
-                <div class="skills-column">
-                    <h2>Tech Skills</h2>
-                    <div class="skills">
-                        <button class="collapsible">Programming Skills</button>
-                        <div class="content">
-                            <ul>
-                                <li>Python (Numpy, Pandas, Sklearn, Tensorflow, Matplotlib)</li>
-                                <li>R Studio</li>
-                                <li>SQL</li>
-                                <li>Machine Learning</li>
-                                <li>Data Analysis</li>
-                            </ul>
-                        </div>
-
-                        <button class="collapsible">Cloud and Analytics</button>
-                        <div class="content">
-                            <ul>
-                                <li>Google Cloud Platform/GCP (BigQuery, Vertex AI)</li>
-                                <li>Salesforce (Marketing Cloud, CDP, and Einstein)</li>
-                                <li>SAS (CI, Guide, and Viya)</li>
-                                <li>Google Ad Manager and Analytics</li>
-                            </ul>
-                        </div>
-
-                        <button class="collapsible">Data Visualization and Tools</button>
-                        <div class="content">
-                            <ul>
-                                <li>Power BI</li>
-                                <li>Tableau</li>
-                                <li>Excel</li>
-                                <li>PowerPoint</li>
-                            </ul>
-                        </div>
-
-                        <button class="collapsible">Project Management and Collaboration</button>
-                        <div class="content">
-                            <ul>
-                                <li>Jira</li>
-                                <li>Confluence</li>
-                                <li>Agile</li>
-                            </ul>
-                        </div>
-
-                        <button class="collapsible">Big Data Technologies</button>
-                        <div class="content">
-                            <ul>
-                                <li>Hadoop</li>
-                                <li>GitHub</li>
-                                <li>GitLab</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Section -->
-                <div class="education-column">
-                    <h2>Education</h2>
-                    <div class="education">
-                        <button class="collapsible">
-                            <img src="ipparispng.png" alt="School 1 Logo" class="school-logo"> Institut Polytechnique de Paris - Télécom SudParis
-                        </button>
-                        <div class="content">
-                            <p>Master of Science in Data Science (Paris)</p>
-                            <p>2023 - 2024</p>
-                        </div>
-
-                        <button class="collapsible">
-                            <img src="usp.png" alt="School 2 Logo" class="school-logo"> USP - University of São Paulo
-                        </button>
-                        <div class="content">
-                            <p>MBA in Data Science and Analytics (Brazil)</p>
-                            <p>2021 - 2023</p>
-                        </div>
-
-                        <button class="collapsible">
-                            <img src="ufjfpng.png" alt="School 3 Logo" class="school-logo"> UFJF - Federal University of Juiz de Fora
-                        </button>
-                        <div class="content">
-                            <p>Bachelor's Degree in Mechanical Engineering (Brazil)</p>
-                            <p>2013 - 2019</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Data Science Section -->
-            <section id="data-science">
-                <h2>Data Analytics / Visualization Projects </h2>
-                <div class="grid-container">
-                    <div class="project">
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiYjYzNjk4NjgtODc0MC00ZTFhLWIxYmEtMzY0MjZkZDNjZTdlIiwidCI6Ijc3YjEyMTAwLTllMGYtNDJkZS1hOWRjLWE1MzA3OGZmZWFlZiJ9" target="_blank">
-                            <img src="sales.jpg" alt="Data Science Project 2">
-                        </a>
-                        <div class="description">
-                            <p><strong>SALES ANALYSIS DASHBOARD</strong> </p>
-                            <p><strong>Overview:</strong> This project focuses on creating an general Dashboard related to the total sales of a store.</p>
-                            <p><strong>Tools:</strong> PowerBI, ETL, PowerQuery, DAX, Data visualization </p>
-          
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-                       <!-- Data Science Section -->
-            <section id="data-science">
-                <h2>Data Science Projects </h2>
-                <div class="grid-container">
-                    <div class="project">
-                        <a href="https://github.com/victorcasi/data_science/tree/main/projects/Renault" target="_blank">
-                            <img src="Renault.jpg" alt="Data Science Project 1">
-                        </a>
-                        <div class="description">
-                            <p><strong>CONFIDENCE INTERVALS</strong> </p>
-                            <p><strong>Overview:</strong> This project, realized at Renault Group, focuses on optimizing automotive components through customer usage data analysis, applying statistical techniques like bootstrap and regression to construct confidence intervals.</p>
-                            <p><strong>Tools:</strong> Python for Statistics and Machine Learning, Jupyter Notebook, GCP (Vertex AI, BigQuery)</p>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <a href="https://github.com/victorcasi/data_science/tree/main/projects/Game_Company" target="_blank">
-                            <img src="videogame.jpg" alt="Data Science Project 2">
-                        </a>
-                        <div class="description">
-                            <p><strong>WINNER PREDICITON</strong> </p>
-                            <p><strong>Overview:</strong> This project predicts player ranks in a competitive game using post-game statistics. It involves data cleaning, feature engineering, and modeling to analyze gameplay behaviors and identify key performance factors.</p>
-                            <p><strong>Tools:</strong> Python for Machine Learning and Data Analysis, Jupyter Notebook, Scikit-Learn, TensorFlow, and visualization libraries (Matplotlib, Seaborn). </p>
-          
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <p class="hero-desc">
+          I'm a Data Scientist with experience in analytics, machine learning, and cloud. Passionate about solving business problems with data and technology.<br>
+          Based in Paris, France.
+        </p>
+        <div class="hero-actions">
+          <a href="https://raw.githubusercontent.com/victorcasi/readme/main/(English)%20Victor%20C%20Silva%20CV.pdf" class="btn primary" target="_blank"><i class="fa fa-file"></i> View CV</a>
+          <a href="mailto:victorcarvsi@gmail.com" class="btn secondary"><i class="fa fa-envelope"></i> Contact</a>
+          <a href="https://www.linkedin.com/in/victorcasi/" class="btn secondary" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/victorcasi" class="btn secondary" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-    </div>
+      </div>
+    </section>
+  </div>
+
+  <main class="main-content">
+    <section class="section experiences">
+      <h2>Experiences</h2>
+      <div class="experience-cards">
+        <div class="exp-card nubank">
+          <img src="nubank.png" alt="Nubank" class="exp-logo">
+          <div class="exp-info">
+            <div class="exp-title">Nubank</div>
+            <div class="exp-role">Business and Data Analyst</div>
+            <div class="exp-type">Full Contract</div>
+            <div class="exp-date">02/2025 - Today</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="renaultlogo2.jpg" alt="Renault" class="exp-logo">
+          <div class="exp-info">
+            <div class="exp-title">Renault Group</div>
+            <div class="exp-role">Data Scientist</div>
+            <div class="exp-type">Specialization Internship</div>
+            <div class="exp-date">03/2024 - 10/2024</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="itau.png" alt="Itaú" class="exp-logo">
+          <div class="exp-info">
+            <div class="exp-title">Itaú Unibanco</div>
+            <div class="exp-role">Data Analyst (CRM)</div>
+            <div class="exp-type">Permanent Contract / CDI</div>
+            <div class="exp-date">06/2021 - 12/2023</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="B3.png" alt="B3" class="exp-logo">
+          <div class="exp-info">
+            <div class="exp-title">Brazilian Stock Exchange</div>
+            <div class="exp-role">Data Scientist</div>
+            <div class="exp-type">Internship</div>
+            <div class="exp-date">08/2018 - 08/2019</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="embrapalogo.jpg" alt="Embrapa" class="exp-logo">
+          <div class="exp-info">
+            <div class="exp-title">Embrapa</div>
+            <div class="exp-role">Data Analyst</div>
+            <div class="exp-type">Internship</div>
+            <div class="exp-date">06/2017 - 06/2018</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-education">
+      <div class="skills-block">
+        <h2>Tech Skills</h2>
+        <div class="skills-list">
+          <button class="collapsible">Programming Skills</button>
+          <div class="content">
+            <ul>
+              <li>Python (Numpy, Pandas, Sklearn, Tensorflow, Matplotlib)</li>
+              <li>R Studio</li>
+              <li>SQL</li>
+              <li>Machine Learning</li>
+              <li>Data Analysis</li>
+            </ul>
+          </div>
+          <button class="collapsible">Cloud and Analytics</button>
+          <div class="content">
+            <ul>
+              <li>Google Cloud Platform/GCP (BigQuery, Vertex AI)</li>
+              <li>Salesforce (Marketing Cloud, CDP, and Einstein)</li>
+              <li>SAS (CI, Guide, and Viya)</li>
+              <li>Google Ad Manager and Analytics</li>
+            </ul>
+          </div>
+          <button class="collapsible">Data Visualization and Tools</button>
+          <div class="content">
+            <ul>
+              <li>Power BI</li>
+              <li>Tableau</li>
+              <li>Excel</li>
+              <li>PowerPoint</li>
+            </ul>
+          </div>
+          <button class="collapsible">Project Management and Collaboration</button>
+          <div class="content">
+            <ul>
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>Agile</li>
+            </ul>
+          </div>
+          <button class="collapsible">Big Data Technologies</button>
+          <div class="content">
+            <ul>
+              <li>Hadoop</li>
+              <li>GitHub</li>
+              <li>GitLab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="education-block">
+        <h2>Education</h2>
+        <div class="education-list">
+          <div class="edu-card">
+            <img src="ipparispng.png" alt="Polytechnique" class="edu-logo">
+            <div>
+              <div class="edu-title">Institut Polytechnique de Paris - Télécom SudParis</div>
+              <div class="edu-detail">MSc in Data Science (2023-2024)</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <img src="usp.png" alt="USP" class="edu-logo">
+            <div>
+              <div class="edu-title">USP - University of São Paulo</div>
+              <div class="edu-detail">MBA in Data Science and Analytics (2021-2023)</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <img src="ufjfpng.png" alt="UFJF" class="edu-logo">
+            <div>
+              <div class="edu-title">UFJF - Federal University of Juiz de Fora</div>
+              <div class="edu-detail">BSc in Mechanical Engineering (2013-2019)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYjYzNjk4NjgtODc0MC00ZTFhLWIxYmEtMzY0MjZkZDNjZTdlIiwidCI6Ijc3YjEyMTAwLTllMGYtNDJkZS1hOWRjLWE1MzA3OGZmZWFlZiJ9" target="_blank">
+            <img src="sales.jpg" alt="Sales Dashboard">
+            <div class="project-title">Sales Analysis Dashboard</div>
+            <div class="project-overview">General dashboard for total sales of a store, with interactive visualizations and business insights.</div>
+            <div class="project-tools"><strong>Tools:</strong> PowerBI, ETL, PowerQuery, DAX, Data visualization</div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://github.com/victorcasi/data_science/tree/main/projects/Renault" target="_blank">
+            <img src="Renault.jpg" alt="Renault Project">
+            <div class="project-title">Confidence Intervals (Renault)</div>
+            <div class="project-overview">Optimization of automotive components using customer usage data, bootstrap and regression for confidence intervals.</div>
+            <div class="project-tools"><strong>Tools:</strong> Python, Jupyter, GCP (Vertex AI, BigQuery), Statistics, Machine Learning</div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://github.com/victorcasi/data_science/tree/main/projects/Game_Company" target="_blank">
+            <img src="videogame.jpg" alt="Game Project">
+            <div class="project-title">Winner Prediction (Game)</div>
+            <div class="project-overview">Prediction of player ranks in a competitive game using post-game statistics, feature engineering and modeling.</div>
+            <div class="project-tools"><strong>Tools:</strong> Python, Scikit-Learn, TensorFlow, Jupyter, Data Analysis, Visualization</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

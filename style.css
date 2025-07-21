@@ -1,282 +1,510 @@
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* Fundo preto */
-    height: 100vh; /* Altura total da viewport */
-    overflow: hidden; /* Impede a barra de rolagem no corpo */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  color: #232526;
+  min-height: 100vh;
 }
 
-.container {
-    display: flex;
-    height: 100%;
+.hero-bg {
+  width: 100vw;
+  min-height: 48vh;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 16px 0;
 }
 
-.left-column {
-    background-color: #00BFFF !important; /* Azul claro para a coluna esquerda */
-    width: 20% !important;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Alinha ao topo */
-    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.left-column h2,
-.left-column p {
-    text-align: center;
+.hero-avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 18px rgba(74,144,226,0.13), 0 1px 4px rgba(44,62,80,0.08);
+  border: 3px solid #fff;
+  background: #fff;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.hero-avatar img:hover {
+  box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+  border: 3px solid #4a90e2;
 }
 
-.profile-photo img {
-    width: 200px !important;
-    height: auto !important;
-    border-radius: 50%;
+.hero-content {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero-intro {
+  font-size: 1rem;
+  color: #4a90e2;
+  margin: 0 0 2px 0;
+}
+.hero-name {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  color: #232526;
+  letter-spacing: 0.2px;
+}
+.hero-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 4px;
+}
+.hero-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.badge {
+  background: #eaf3fb;
+  color: #4a90e2;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 2px 10px;
+  letter-spacing: 0.3px;
+}
+.hero-desc {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 1px 4px rgba(74,144,226,0.06);
+}
+.btn.primary {
+  background: #4a90e2;
+  color: #fff;
+}
+.btn.primary:hover {
+  background: #232526;
+  color: #fff;
+}
+.btn.secondary {
+  background: #fff;
+  color: #4a90e2;
+  border: 1.2px solid #e0eafc;
+}
+.btn.secondary:hover {
+  background: #eaf3fb;
+  color: #232526;
 }
 
-.personal-information {
-    margin-top: 20px;
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8px 32px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.personal-information h2 {
-    color: #000; /* Define a cor do nome como branco */
-    margin: 0; /* Remove margens para centralização perfeita */
+.section {
+  margin-top: 12px;
+}
+.section h2 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #232526;
+  margin-bottom: 16px;
+  letter-spacing: 0.2px;
 }
 
-.contact,
-.useful-links {
-    margin-top: 15px;
-    text-align: center;
+/* Experiences */
+.experience-cards {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.exp-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(74,144,226,0.06);
+  padding: 12px 10px 8px 10px;
+  min-width: 140px;
+  max-width: 180px;
+  flex: 1 1 140px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e0eafc;
+  transition: box-shadow 0.18s, border 0.18s, transform 0.12s;
+}
+.exp-card:hover {
+  box-shadow: 0 2px 12px rgba(74,144,226,0.10);
+  border: 1px solid #4a90e2;
+  transform: translateY(-2px) scale(1.01);
+}
+.exp-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(74,144,226,0.06);
+  border: 1px solid #e0eafc;
+}
+.exp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.exp-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #232526;
+}
+.exp-role {
+  font-size: 0.93rem;
+  color: #4a90e2;
+  font-weight: 600;
+}
+.exp-type, .exp-date {
+  font-size: 0.89rem;
+  color: #888;
+}
+.exp-card.nubank {
+  background: linear-gradient(120deg, #a259e6 0%, #820ad1 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 24px rgba(130,10,209,0.10);
+}
+.exp-card.nubank .exp-title,
+.exp-card.nubank .exp-role,
+.exp-card.nubank .exp-type,
+.exp-card.nubank .exp-date {
+  color: #fff;
+}
+.exp-card.nubank .exp-logo {
+  background: #fff;
+  border: 1.5px solid #fff;
 }
 
-.curriculos h3 {
-    margin-bottom: 10px;
+/* Skills & Education */
+.skills-education {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-block, .education-block {
+  flex: 1 1 260px;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(74,144,226,0.06);
+  padding: 16px 12px 10px 12px;
+  border: 1px solid #e0eafc;
+}
+.skills-block h2, .education-block h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #4a90e2;
+  font-weight: 700;
+}
+.skills-list button.collapsible {
+  background: #eaf3fb;
+  color: #232526;
+  cursor: pointer;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 7px;
+  text-align: left;
+  outline: none;
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  box-shadow: 0 1px 4px rgba(74,144,226,0.04);
+  border: 1px solid #e0eafc;
+  transition: background 0.15s, color 0.15s, border 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+.skills-list button.collapsible:hover, .skills-list button.collapsible.active {
+  background: #4a90e2;
+  color: #fff;
+  border: 1px solid #232526;
+  box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+}
+.skills-list button.collapsible:after {
+  content: '\002B';
+  color: inherit;
+  font-weight: bold;
+  float: right;
+  margin-left: 8px;
+  transition: transform 0.15s;
+}
+.skills-list button.collapsible.active:after {
+  content: "\2212";
+  transform: rotate(180deg);
+}
+.skills-list .content {
+  padding: 0 8px 5px 8px;
+  display: none;
+  overflow: hidden;
+  background: #f7f8fa;
+  border-left: 2px solid #4a90e2;
+  border-radius: 0 0 7px 7px;
+  margin-bottom: 5px;
+  animation: fadeIn 0.15s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.skills-list ul {
+  margin: 0;
+  padding-left: 14px;
+  font-size: 0.95rem;
+  color: #444;
 }
 
-.useful-links h3 {
-    margin-bottom: 10px;
-    text-align: center; /* Adicione esta linha para garantir que o título esteja centralizado */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.edu-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(74,144,226,0.06);
+  border: 1px solid #e0eafc;
+}
+.edu-title {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: #232526;
+}
+.edu-detail {
+  font-size: 0.91rem;
+  color: #888;
 }
 
-.useful-links .icons,
-.icons {
-    display: flex;
-    justify-content: center;
+/* Projects */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+}
+.project-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  border: 1px solid #ececec;
+  transition: box-shadow 0.18s, border 0.18s, transform 0.12s;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(74,144,226,0.13);
+  border: 1.5px solid #4a90e2;
+  transform: translateY(-4px) scale(1.02);
+  z-index: 2;
+}
+.project-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+}
+.project-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 0;
+  display: block;
+  box-sizing: border-box;
+}
+.project-title {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #232526;
+  margin: 18px 20px 4px 20px;
+  letter-spacing: 0.1px;
+}
+.project-overview {
+  font-size: 0.99rem;
+  color: #444;
+  margin: 0 20px 8px 20px;
+  line-height: 1.5;
+}
+.project-tools {
+  font-size: 0.93rem;
+  color: #4a90e2;
+  margin: 0 20px 18px 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .hero-section, .main-content {
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .main-content {
     gap: 20px;
-}
-
-.icons a {
-    font-size: 24px;
-    color: #000 !important;
-    text-decoration: none;
-    margin: 5px 0;
-}
-
-.icons a:hover {
-    color: #fff !important;
-}
-
-.right-column {
-    width: 80%;
-    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
-    padding: 20px;
-    background-color: #fff;
-}
-
-h2 {
-    color: #00BFFF; /* Cor dos títulos */
-}
-
-#experiences {
-    margin-bottom: 20px; /* Espaçamento inferior para separar das seções seguintes */
-}
-
-.experience-container {
-    display: flex;
-    justify-content: space-between; /* Espaçamento igual entre os itens */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
-}
-
-.experience {
-    text-align: center;
-    flex: 1; /* Permite que os itens cresçam igualmente */
-    min-width: 150px; /* Largura mínima para evitar que fique muito pequeno */
-    display: flex; /* Flexbox para alinhar conteúdo */
-    flex-direction: column; /* Direção vertical */
-    align-items: center; /* Centraliza horizontalmente */
-    margin: 10px; /* Espaçamento entre experiências */
-}
-
-.experience-logo {
-    width: 50px; /* Ajuste o tamanho do logo conforme necessário */
-    height: 50px; /* Altura fixa para o logo */
-    margin-bottom: 5px; /* Espaçamento entre o logo e o texto */
-}
-
-.experience p {
-    margin: 2px 0; /* Reduz o espaço superior e inferior do parágrafo */
-    line-height: 1.2; /* Ajuste o valor conforme necessário */
-}
-
-/* Estilos para os botões expansíveis */
-button.collapsible {
-    background-color: #4169E1;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    width: 100%;
-}
-
-button.collapsible:hover {
-    background-color: #00BFFF;
-}
-
-button.collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-}
-
-button.collapsible.active:after {
-    content: "\2212";
-}
-
-.content {
-    padding: 0 15px;
-    display: none;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    border-left: 4px solid #00BFFF;
-    padding: 10px;
-}
-
-/* Estilo para a seção Skills e Education */
-#skills-education {
-    display: flex;
-    gap: 20px;
-}
-
-.skills-column,
-.education-column {
-    width: 50%;
-}
-
-/* Ajustes para alinhar as bordas superiores e inferiores */
-.education-column .education {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Alinha os botões para ocupar a mesma altura */
-    flex-grow: 1; /* Faz com que a coluna da educação cresça */
-}
-
-.skills-column .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Alinha os botões para ocupar a mesma altura */
-    flex-grow: 1; /* Faz com que a coluna de habilidades cresça */
-}
-
-.school-logo {
-    width: 24px;
-    height: auto;
-    margin-right: 10px;
-}
-
-/* Estilo para a nova seção Currículos */
-.curriculos {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.curriculos .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.flag-icon {
-    width: 24px;
-    height: auto;
-}
-
-/* Estilos para a grid de projetos de Data Science */
-.grid-container {
-    display: grid;
+  }
+  .project-cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
+  }
+  .project-card {
+    width: 98vw;
+    min-width: unset;
+    max-width: 100vw;
+  }
 }
-
-.project {
-    background-color: #4169E1 !important;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
+@media (max-width: 900px) {
+  .hero-section {
     flex-direction: column;
+    gap: 16px;
     align-items: center;
-    padding: 15px;
+    text-align: center;
+  }
+  .main-content {
+    gap: 14px;
+  }
+  .skills-education {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .project-card {
+    width: 100vw;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 0;
+  }
+  .project-card img {
+    height: 90px;
+    border-radius: 10px 10px 0 0;
+  }
+  .project-title, .project-overview, .project-tools {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .project-title {
+    margin-top: 10px;
+  }
+  .project-tools {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .project-card {
+    border-radius: 10px;
+    padding: 0;
+  }
+  .project-card img {
+    height: 90px;
+    border-radius: 10px 10px 0 0;
+  }
+  .project-title, .project-overview, .project-tools {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .project-title {
+    margin-top: 10px;
+  }
+  .project-tools {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-bg {
+    padding: 12px 0 6px 0;
+  }
+  .hero-avatar img {
+    width: 70px;
+    height: 70px;
+  }
+  .hero-name {
+    font-size: 1.1rem;
+  }
+  .main-content {
+    padding: 0 2vw 12px 2vw;
+  }
+  .exp-card, .project-card, .skills-block, .education-block {
+    min-width: unset;
+    max-width: 98vw;
     width: 100%;
-    box-sizing: border-box;
-}
-
-.project a {
-    width: 100%; /* Garante que o link ocupe toda a largura do contêiner */
-    display: block; /* Faz com que o link se comporte como um bloco */
-    position: relative; /* Permite que os filhos sejam posicionados em relação a ele */
-}
-
-.project a img {
-    width: 100%; /* A imagem ocupa 100% da largura do link */
-    height: 200px; /* Altura fixa para a imagem */
-    object-fit: cover; /* Corta a imagem para preencher o espaço, possivelmente distorcendo-a */
-    border: 1px solid #fff !important; /* Borda branca */
-    border-radius: 10px; /* Bordas arredondadas */
-    display: block; /* Garante que a imagem seja tratada como um bloco */
-    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
-    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
-}
-/* Adiciona sombra ao passar o mouse sobre as imagens dos projetos */
-.project a img:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra quando o mouse passa */
-}
-
-/* Efeito de clique (escurecimento da imagem) */
-.project a img:active {
-    filter: brightness(0.85); /* Escurece levemente a imagem ao clicar */
-}
-
-.description {
-    background-color: #4169E1 !important;
-    padding: 15px;
-    color: #fff;
-    text-align: justify;
-    border-radius: 0 0 5px 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Estilo para a linha horizontal */
-.separator {
-    border: none; /* Remove a borda padrão */
-    height: 1px; /* Define a altura da linha */
-    background-color: #000; /* Cor da linha */
-    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
-}
-
-/* Estilo para a seção Contatos */
-.contatos {
-    margin-top: 15px; /* Espaçamento acima da seção */
-    text-align: center; /* Centraliza o texto */
+    padding: 6px 2px;
+  }
+  .project-card {
+    width: 100vw;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 0;
+  }
+  .project-card img {
+    height: 90px;
+    border-radius: 10px 10px 0 0;
+  }
+  .project-title, .project-overview, .project-tools {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .project-title {
+    margin-top: 10px;
+  }
+  .project-tools {
+    margin-bottom: 10px;
+  }
 }
